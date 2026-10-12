@@ -17,3 +17,17 @@ h1 span{font-size:1em}.intro>p:not(.lead):not(.role):not(.eyebrow)+p{margin-top:
 .chinese-introduction{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}.chinese-introduction h2{font-family:'Songti SC','Noto Serif CJK SC',serif;font-style:normal;letter-spacing:0;line-height:1.4}.chinese-introduction p{font-size:15px;line-height:2.1}.chinese-introduction a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.site-header nav{flex-basis:100%;gap:8px 18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.language-switch{display:flex;align-items:center;flex-shrink:0;gap:3px;padding:3px;border:1px solid var(--line);border-radius:28px}.language-switch[hidden]{display:none}.language-switch button{min-height:44px;border:0;border-radius:24px;background:transparent;color:var(--body);padding:8px 13px;font:inherit;font-size:12px;line-height:1.4;cursor:pointer}.language-switch button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}.language-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+html[lang="zh-CN"]{--serif:'Songti SC','Noto Serif CJK SC',serif;--sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}html[lang="zh-CN"] :is(h1,h2,h3,h4){letter-spacing:0}html[lang="zh-CN"] :is(.section-heading h2,.city-notes h2,.contact h2){font-style:normal}html[lang="zh-CN"] h1{line-height:1.3}html[lang="zh-CN"] h1 .english-name{display:block;margin-top:14px;line-height:1.5;font-family:Georgia,serif;font-size:clamp(20px,2.3vw,26px);letter-spacing:0}html[lang="zh-CN"] .lead{line-height:1.65}html[lang="zh-CN"] .publication h3{line-height:1.65}html[lang="zh-CN"] .journal{letter-spacing:0}html[lang="zh-CN"] .authors{font-family:Georgia,serif}html[lang="zh-CN"] .portrait figcaption{line-height:1.8}html[lang="zh-CN"] .city-list dd{line-height:1.95}
+@media(max-width:1100px){.site-header{flex-direction:row;align-items:center}.site-header .wordmark{order:1}.site-header .language-switch{order:2;margin-left:auto}.site-header nav{order:3;flex-basis:100%;justify-content:flex-start}.site-header{gap:10px 16px}}
+
+[data-language-only][hidden]{display:none!important}
+html[lang="zh-CN"] .intro>[data-i18n="about-p-4"]{font-size:15px;line-height:2}
+html[lang="zh-CN"] .portrait:before{bottom:31px}
+html[lang="zh-CN"] .publication h3[lang="en"]{font-family:Georgia,'Times New Roman',serif;line-height:1.45}
+.publication h3 .paper-translation,.working-papers h4 .paper-translation{display:block;margin-top:8px;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;font-size:13px;font-weight:400;line-height:1.85;color:var(--body);white-space:normal}
+.working-papers h4 .paper-translation{font-size:12px;margin-top:5px}
+
+.news-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;align-items:baseline}.news-item time{color:var(--accent);font-size:12px;font-variant-numeric:tabular-nums}.news-item p{line-height:1.9}
+@media(max-width:650px){.news-item{grid-template-columns:1fr;gap:8px}}
